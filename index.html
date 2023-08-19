@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale</title>
+<!-- Google font work sans. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- script for daisy UI and tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-    
-
+<link rel="stylesheet" href="./style.css">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary:'#E527B2',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <header>
-        <h1 class="bg-slate-600">hello world</h1>
-    </header>
-    <main>
 
+
+<body class="max-w-screen-2xl mx-auto">
+    <header class="flex text-center justify-center gap-8 items-center py-20 bg-[#F9F6E2] brr">
+        <div class="">
+            <h1 class="font-medium text-3xl">---SALE FEVER---</h1>
+            <h2 class="font-semibold text-6xl whitespace-nowrap mt-11 mb-16">Purchase TK 200 or<br> above & get <span class="text-primary">20% off</span></h2>
+            <div class="flex justify-center items-center gap-4">
+                <p class="font-medium text-2xl">Use Promo Code</p>
+                <button class="primary-button">SELL200</button>
+            </div>
+        </div>
+        <div>
+            <img  src="./images/Summer 1.png" alt="">
+        </div>
+    </header>
+
+    <main class="flex justify-between px-60 bg-[#F8F8F8] mt-24">
+      <section class="">
+      <h2 class="text-4xl font-semibold">Kitchenware</h2>  
+        <div id="kitchen-items">
+          <div class="card p-5 bg-base-100 rounded-lg brr ">
+
+            <figure class="px-10 pt-10 rounded-lg  brb">
+              <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+
+            <div class="rating mx-auto">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="item-name">K.Accessories</h2>
+              <p><span id="price-1">39.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="">
+        <p>Make Purchase</p>
+      </section>
     </main>
     <footer>
 
