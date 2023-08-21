@@ -42,9 +42,9 @@
         </div>
     </header>
 
-    <main class="flex gap-0 md:gap-4 md:p-4 px-4 lg:px-28 2xl:px-60 mt-24">
-      <section id="products" class="w-1/2 lg:w-3/4 brr">
-      <div>
+    <main class="flex -gap-2 md:gap-4 md:p-4 px-4 lg:px-28 2xl:px-60 mt-24">
+      <section id="products" class="w-1/2 lg:w-3/4">
+      
         <h2 class="text-4xl font-semibold mb-8">Kitchenware</h2>
           <div class="cards-container flex flex-col lg:flex-row gap-2 md:gap-5">
  <!-- cards -->
@@ -155,11 +155,11 @@
               </div>
             </div>
           </div>  
-      </div>  
+      
       </section>
 
 
-      <section id="sidebar" class="w-1/2 lg:w-1/4 text-2xl scale-75 md:scale-100 brr">
+      <section id="sidebar" class="w-1/2 lg:w-1/4 text-2xl scale-90 md:scale-100 ">
 
         <div class="form-control text-xl mt-7 mb-6 p-5 bg-white rounded-lg">
           <label class="label mb-4">
@@ -167,7 +167,7 @@
           </label>
           <label class="input-group">
             <input id="input" type="text" placeholder="Coupon code" class="input input-bordered w-full" />
-            <button id="apply" onclick="discountPrice()" class="px-2 bg-primary text-white text-xl font-semibold " disabled>APPLY</button>
+            <button id="apply" onclick="discountPrice()" class="px-2 bg-primary text-white text-base md:text-xl font-semibold " disabled>APPLY</button>
           </label>
         </div>
 
@@ -180,9 +180,9 @@
           </div>
           <hr>
           <div class="all-transactions mt-3">
-            <p>Total price: <span id="total-price">0</span></p>
-            <p>Discount : <span id="discount">0</span></p>
-            <p>Total: <span id="total">0</span></p>
+            <p>Total price: <span id="total-price">0</span>TK</p>
+            <p>Discount : <span id="discount">0</span>TK</p>
+            <p>Total: <span id="total">0</span>TK</p>
           </div>
           <hr class="my-6 ">
         </div>
@@ -195,7 +195,7 @@
     <div class="mx-auto w-2/4">
       <img src="./images/congo.png" alt="">
     </div>
-    <h3 class="font-bold text-5xl">Congratulations</h3>
+    <h3 class="font-bold text-2xl md:text-5xl">Congratulations</h3>
     <p class="py-4 text-xl text-[#11111180]">You Purchased the product</p>
     <div class="modal-action">
       <!-- if there is a button in form, it will close the modal -->
