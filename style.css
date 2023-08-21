@@ -62,16 +62,20 @@ font-weight: 600;
     width: 50%;
     margin: 0 auto;
 }
-.all-transactions span{
+.all-transactions p{
     color: rgba(17, 17, 17, 0.50);
+    white-space: nowrap;
 }
 @media screen and (max-width: 767px) {
     .primary-button{
         padding: 0.38rem 0.62rem;
     }
+    .all-transactions p{
+        white-space: normal;
+    }
 }
 
-.brr{
+/* .brr{
     border: 1px solid red;
 }
 .brb{
@@ -79,4 +83,4 @@ font-weight: 600;
 }
 .brg{
     border: 1px solid green;
-}
+} */
